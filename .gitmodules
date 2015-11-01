@@ -1,0 +1,6 @@
+[submodule "CTAssetsPickerController"]
+	path = CTAssetsPickerController
+	url = http://github.com/chiunam/CTAssetsPickerController
+[submodule "PureLayout"]
+	path = PureLayout
+	url = https://github.com/smileyborg/PureLayout

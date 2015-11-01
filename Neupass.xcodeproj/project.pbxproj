@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADCAFA4B1BE2BA1700D8D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFA4A1BE2BA1700D8D9E2 /* AppDelegate.swift */; };
+		ADCAFA501BE2BA1700D8D9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCAFA4E1BE2BA1700D8D9E2 /* Main.storyboard */; };
+		ADCAFA521BE2BA1700D8D9E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCAFA511BE2BA1700D8D9E2 /* Images.xcassets */; };
+		ADCAFA551BE2BA1700D8D9E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCAFA531BE2BA1700D8D9E2 /* LaunchScreen.xib */; };
+		ADCAFA611BE2BA1700D8D9E2 /* NeupassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFA601BE2BA1700D8D9E2 /* NeupassTests.swift */; };
+		ADCAFA6B1BE2BCD100D8D9E2 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFA6A1BE2BCD100D8D9E2 /* StartViewController.swift */; };
+		ADCAFAF91BE2DF3500D8D9E2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAFAF81BE2DF3500D8D9E2 /* Photos.framework */; };
+		ADCAFAFB1BE2E55800D8D9E2 /* BirthYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFAFA1BE2E55800D8D9E2 /* BirthYearViewController.swift */; };
+		ADCAFB071BE341C800D8D9E2 /* MosaicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB061BE341C800D8D9E2 /* MosaicViewController.swift */; };
+		ADCAFB091BE3511A00D8D9E2 /* RAReorderableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB081BE3511A00D8D9E2 /* RAReorderableLayout.swift */; };
+		ADCAFB0D1BE3C6E400D8D9E2 /* ImageRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB0C1BE3C6E400D8D9E2 /* ImageRotation.swift */; };
+		ADCAFB411BE52E3200D8D9E2 /* Toucan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */; };
+		ADCAFB431BE5327500D8D9E2 /* GameSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */; };
+		ADCC10331BE5A1F200DE31F8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC10321BE5A1F200DE31F8 /* Connection.swift */; settings = {ASSET_TAGS = (); }; };
+		B4516FF5063220DF55BD778F /* Pods_Neupass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268365F76DE724CD73DB432 /* Pods_Neupass.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADCAFA5B1BE2BA1700D8D9E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCAFA3D1BE2BA1700D8D9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCAFA441BE2BA1700D8D9E2;
+			remoteInfo = Neupass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADCAFB3F1BE52C2B00D8D9E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14588887826021B5792E4135 /* Pods-Neupass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neupass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neupass/Pods-Neupass.debug.xcconfig"; sourceTree = "<group>"; };
+		489D841326734E5484769637 /* Pods-Neupass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neupass.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neupass/Pods-Neupass.release.xcconfig"; sourceTree = "<group>"; };
+		9268365F76DE724CD73DB432 /* Pods_Neupass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neupass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCAFA451BE2BA1700D8D9E2 /* Neupass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neupass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCAFA491BE2BA1700D8D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCAFA4A1BE2BA1700D8D9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADCAFA4F1BE2BA1700D8D9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADCAFA511BE2BA1700D8D9E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADCAFA541BE2BA1700D8D9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ADCAFA5A1BE2BA1700D8D9E2 /* NeupassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeupassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCAFA5F1BE2BA1700D8D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCAFA601BE2BA1700D8D9E2 /* NeupassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeupassTests.swift; sourceTree = "<group>"; };
+		ADCAFA6A1BE2BCD100D8D9E2 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		ADCAFAF81BE2DF3500D8D9E2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		ADCAFAFA1BE2E55800D8D9E2 /* BirthYearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthYearViewController.swift; sourceTree = "<group>"; };
+		ADCAFB061BE341C800D8D9E2 /* MosaicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicViewController.swift; sourceTree = "<group>"; };
+		ADCAFB081BE3511A00D8D9E2 /* RAReorderableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAReorderableLayout.swift; sourceTree = "<group>"; };
+		ADCAFB0C1BE3C6E400D8D9E2 /* ImageRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRotation.swift; sourceTree = "<group>"; };
+		ADCAFB271BE52AF000D8D9E2 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = "../Toucan/build/Debug-iphoneos/Toucan.framework"; sourceTree = "<group>"; };
+		ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toucan.swift; sourceTree = "<group>"; };
+		ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSingleton.swift; sourceTree = "<group>"; };
+		ADCC10321BE5A1F200DE31F8 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADCAFA421BE2BA1700D8D9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCAFAF91BE2DF3500D8D9E2 /* Photos.framework in Frameworks */,
+				B4516FF5063220DF55BD778F /* Pods_Neupass.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCAFA571BE2BA1700D8D9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451CC66366DE4EF66B9A8D8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14588887826021B5792E4135 /* Pods-Neupass.debug.xcconfig */,
+				489D841326734E5484769637 /* Pods-Neupass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		594C2B4C2E8789962EB62293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFB271BE52AF000D8D9E2 /* Toucan.framework */,
+				ADCAFAF81BE2DF3500D8D9E2 /* Photos.framework */,
+				9268365F76DE724CD73DB432 /* Pods_Neupass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADCAFA3C1BE2BA1700D8D9E2 = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA471BE2BA1700D8D9E2 /* Neupass */,
+				ADCAFA5D1BE2BA1700D8D9E2 /* NeupassTests */,
+				ADCAFA461BE2BA1700D8D9E2 /* Products */,
+				451CC66366DE4EF66B9A8D8E /* Pods */,
+				594C2B4C2E8789962EB62293 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADCAFA461BE2BA1700D8D9E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA451BE2BA1700D8D9E2 /* Neupass.app */,
+				ADCAFA5A1BE2BA1700D8D9E2 /* NeupassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADCAFA471BE2BA1700D8D9E2 /* Neupass */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA4A1BE2BA1700D8D9E2 /* AppDelegate.swift */,
+				ADCAFA4E1BE2BA1700D8D9E2 /* Main.storyboard */,
+				ADCAFA511BE2BA1700D8D9E2 /* Images.xcassets */,
+				ADCAFA531BE2BA1700D8D9E2 /* LaunchScreen.xib */,
+				ADCAFA481BE2BA1700D8D9E2 /* Supporting Files */,
+				ADCC10321BE5A1F200DE31F8 /* Connection.swift */,
+				ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */,
+				ADCAFB0C1BE3C6E400D8D9E2 /* ImageRotation.swift */,
+				ADCAFB081BE3511A00D8D9E2 /* RAReorderableLayout.swift */,
+				ADCAFA6A1BE2BCD100D8D9E2 /* StartViewController.swift */,
+				ADCAFB061BE341C800D8D9E2 /* MosaicViewController.swift */,
+				ADCAFAFA1BE2E55800D8D9E2 /* BirthYearViewController.swift */,
+				ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */,
+			);
+			path = Neupass;
+			sourceTree = "<group>";
+		};
+		ADCAFA481BE2BA1700D8D9E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA491BE2BA1700D8D9E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADCAFA5D1BE2BA1700D8D9E2 /* NeupassTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA601BE2BA1700D8D9E2 /* NeupassTests.swift */,
+				ADCAFA5E1BE2BA1700D8D9E2 /* Supporting Files */,
+			);
+			path = NeupassTests;
+			sourceTree = "<group>";
+		};
+		ADCAFA5E1BE2BA1700D8D9E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAFA5F1BE2BA1700D8D9E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADCAFA441BE2BA1700D8D9E2 /* Neupass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCAFA641BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "Neupass" */;
+			buildPhases = (
+				209A5C7183458EBAF6CBDDE3 /* Check Pods Manifest.lock */,
+				ADCAFA411BE2BA1700D8D9E2 /* Sources */,
+				ADCAFA421BE2BA1700D8D9E2 /* Frameworks */,
+				ADCAFA431BE2BA1700D8D9E2 /* Resources */,
+				D0B104D36FBB95F5FF9DE08F /* Embed Pods Frameworks */,
+				B6E62E7B8816675EA936ACCE /* Copy Pods Resources */,
+				ADCAFB3F1BE52C2B00D8D9E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neupass;
+			productName = Neupass;
+			productReference = ADCAFA451BE2BA1700D8D9E2 /* Neupass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADCAFA591BE2BA1700D8D9E2 /* NeupassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCAFA671BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "NeupassTests" */;
+			buildPhases = (
+				ADCAFA561BE2BA1700D8D9E2 /* Sources */,
+				ADCAFA571BE2BA1700D8D9E2 /* Frameworks */,
+				ADCAFA581BE2BA1700D8D9E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCAFA5C1BE2BA1700D8D9E2 /* PBXTargetDependency */,
+			);
+			name = NeupassTests;
+			productName = NeupassTests;
+			productReference = ADCAFA5A1BE2BA1700D8D9E2 /* NeupassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADCAFA3D1BE2BA1700D8D9E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Manudeep Suresh";
+				TargetAttributes = {
+					ADCAFA441BE2BA1700D8D9E2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					ADCAFA591BE2BA1700D8D9E2 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ADCAFA441BE2BA1700D8D9E2;
+					};
+				};
+			};
+			buildConfigurationList = ADCAFA401BE2BA1700D8D9E2 /* Build configuration list for PBXProject "Neupass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				da,
+				de,
+				"es-MX",
+				es,
+				fi,
+				fr,
+				he,
+				"hi-IN",
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				"nl-NL",
+				nl,
+				"pt-PT",
+				pt,
+				ru,
+				sv,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = ADCAFA3C1BE2BA1700D8D9E2;
+			productRefGroup = ADCAFA461BE2BA1700D8D9E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADCAFA441BE2BA1700D8D9E2 /* Neupass */,
+				ADCAFA591BE2BA1700D8D9E2 /* NeupassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADCAFA431BE2BA1700D8D9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCAFA501BE2BA1700D8D9E2 /* Main.storyboard in Resources */,
+				ADCAFA551BE2BA1700D8D9E2 /* LaunchScreen.xib in Resources */,
+				ADCAFA521BE2BA1700D8D9E2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCAFA581BE2BA1700D8D9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		209A5C7183458EBAF6CBDDE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E62E7B8816675EA936ACCE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neupass/Pods-Neupass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0B104D36FBB95F5FF9DE08F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neupass/Pods-Neupass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADCAFA411BE2BA1700D8D9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCAFB091BE3511A00D8D9E2 /* RAReorderableLayout.swift in Sources */,
+				ADCC10331BE5A1F200DE31F8 /* Connection.swift in Sources */,
+				ADCAFB0D1BE3C6E400D8D9E2 /* ImageRotation.swift in Sources */,
+				ADCAFB411BE52E3200D8D9E2 /* Toucan.swift in Sources */,
+				ADCAFB431BE5327500D8D9E2 /* GameSingleton.swift in Sources */,
+				ADCAFA4B1BE2BA1700D8D9E2 /* AppDelegate.swift in Sources */,
+				ADCAFA6B1BE2BCD100D8D9E2 /* StartViewController.swift in Sources */,
+				ADCAFB071BE341C800D8D9E2 /* MosaicViewController.swift in Sources */,
+				ADCAFAFB1BE2E55800D8D9E2 /* BirthYearViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCAFA561BE2BA1700D8D9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCAFA611BE2BA1700D8D9E2 /* NeupassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADCAFA5C1BE2BA1700D8D9E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCAFA441BE2BA1700D8D9E2 /* Neupass */;
+			targetProxy = ADCAFA5B1BE2BA1700D8D9E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADCAFA4E1BE2BA1700D8D9E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCAFA4F1BE2BA1700D8D9E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADCAFA531BE2BA1700D8D9E2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCAFA541BE2BA1700D8D9E2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADCAFA621BE2BA1700D8D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADCAFA631BE2BA1700D8D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADCAFA651BE2BA1700D8D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14588887826021B5792E4135 /* Pods-Neupass.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/manusuresh/Documents/Toucan/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Neupass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADCAFA661BE2BA1700D8D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489D841326734E5484769637 /* Pods-Neupass.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/manusuresh/Documents/Toucan/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Neupass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADCAFA681BE2BA1700D8D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeupassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neupass.app/Neupass";
+			};
+			name = Debug;
+		};
+		ADCAFA691BE2BA1700D8D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeupassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neupass.app/Neupass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADCAFA401BE2BA1700D8D9E2 /* Build configuration list for PBXProject "Neupass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCAFA621BE2BA1700D8D9E2 /* Debug */,
+				ADCAFA631BE2BA1700D8D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCAFA641BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "Neupass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCAFA651BE2BA1700D8D9E2 /* Debug */,
+				ADCAFA661BE2BA1700D8D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCAFA671BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "NeupassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCAFA681BE2BA1700D8D9E2 /* Debug */,
+				ADCAFA691BE2BA1700D8D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADCAFA3D1BE2BA1700D8D9E2 /* Project object */;
+}

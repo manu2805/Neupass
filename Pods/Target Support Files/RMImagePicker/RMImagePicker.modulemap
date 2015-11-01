@@ -1,0 +1,6 @@
+framework module RMImagePicker {
+  umbrella header "RMImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

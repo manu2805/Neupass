@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (3.1.0)
+  - RMImagePicker (0.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - RMImagePicker (~> 0.1.4)
+
+SPEC CHECKSUMS:
+  Alamofire: 415bd7f56197722978759078486689f7ef913dce
+  RMImagePicker: cd8bd7acb6374935976956935d63ce1b7c60e5d9
+
+COCOAPODS: 0.39.0
