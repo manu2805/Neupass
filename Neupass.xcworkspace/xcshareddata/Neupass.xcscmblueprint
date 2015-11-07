@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "01D53943161D0DD168E2C9877590FCB039813303",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01D53943161D0DD168E2C9877590FCB039813303" : 0,
+    "80ADD6617E2E5B252D87FAA27AAF85DB06DC7FEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4360E8F9-41CF-4B9A-B8D3-5E020B130295",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01D53943161D0DD168E2C9877590FCB039813303" : "Neupass\/",
+    "80ADD6617E2E5B252D87FAA27AAF85DB06DC7FEF" : "Toucan\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Neupass",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Neupass.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manu2805\/Neupass.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01D53943161D0DD168E2C9877590FCB039813303"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gavinbunney\/Toucan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80ADD6617E2E5B252D87FAA27AAF85DB06DC7FEF"
+    }
+  ]
+}

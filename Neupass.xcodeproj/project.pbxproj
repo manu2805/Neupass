@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0A29621BE6799900A160FE /* CacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A29611BE6799900A160FE /* CacheViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0A29641BE6FFE600A160FE /* GameModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A29631BE6FFE600A160FE /* GameModesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0A29661BE7C9A100A160FE /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A29651BE7C9A100A160FE /* Modes.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0A296B1BE7D84A00A160FE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A296A1BE7D84A00A160FE /* Hash.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0A296D1BE86E1700A160FE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A296C1BE86E1700A160FE /* Images.swift */; settings = {ASSET_TAGS = (); }; };
+		AD0A29731BEB5CA800A160FE /* CorrectPictureCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A29721BEB5CA800A160FE /* CorrectPictureCountViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ADCAFA4B1BE2BA1700D8D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFA4A1BE2BA1700D8D9E2 /* AppDelegate.swift */; };
 		ADCAFA501BE2BA1700D8D9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCAFA4E1BE2BA1700D8D9E2 /* Main.storyboard */; };
 		ADCAFA521BE2BA1700D8D9E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCAFA511BE2BA1700D8D9E2 /* Images.xcassets */; };
@@ -21,6 +27,7 @@
 		ADCAFB411BE52E3200D8D9E2 /* Toucan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */; };
 		ADCAFB431BE5327500D8D9E2 /* GameSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */; };
 		ADCC10331BE5A1F200DE31F8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC10321BE5A1F200DE31F8 /* Connection.swift */; settings = {ASSET_TAGS = (); }; };
+		ADFFC6ED1BE5CA9B0053C29E /* Readings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFC6EC1BE5CA9B0053C29E /* Readings.swift */; settings = {ASSET_TAGS = (); }; };
 		B4516FF5063220DF55BD778F /* Pods_Neupass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268365F76DE724CD73DB432 /* Pods_Neupass.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +58,13 @@
 		14588887826021B5792E4135 /* Pods-Neupass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neupass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neupass/Pods-Neupass.debug.xcconfig"; sourceTree = "<group>"; };
 		489D841326734E5484769637 /* Pods-Neupass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neupass.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neupass/Pods-Neupass.release.xcconfig"; sourceTree = "<group>"; };
 		9268365F76DE724CD73DB432 /* Pods_Neupass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neupass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0A29611BE6799900A160FE /* CacheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheViewController.swift; sourceTree = "<group>"; };
+		AD0A29631BE6FFE600A160FE /* GameModesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModesViewController.swift; sourceTree = "<group>"; };
+		AD0A29651BE7C9A100A160FE /* Modes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
+		AD0A29681BE7D69300A160FE /* Neupass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neupass-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD0A296A1BE7D84A00A160FE /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		AD0A296C1BE86E1700A160FE /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		AD0A29721BEB5CA800A160FE /* CorrectPictureCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectPictureCountViewController.swift; sourceTree = "<group>"; };
 		ADCAFA451BE2BA1700D8D9E2 /* Neupass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neupass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCAFA491BE2BA1700D8D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADCAFA4A1BE2BA1700D8D9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +84,7 @@
 		ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toucan.swift; sourceTree = "<group>"; };
 		ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSingleton.swift; sourceTree = "<group>"; };
 		ADCC10321BE5A1F200DE31F8 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		ADFFC6EC1BE5CA9B0053C29E /* Readings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +154,7 @@
 				ADCAFA511BE2BA1700D8D9E2 /* Images.xcassets */,
 				ADCAFA531BE2BA1700D8D9E2 /* LaunchScreen.xib */,
 				ADCAFA481BE2BA1700D8D9E2 /* Supporting Files */,
+				ADFFC6EC1BE5CA9B0053C29E /* Readings.swift */,
 				ADCC10321BE5A1F200DE31F8 /* Connection.swift */,
 				ADCAFB421BE5327500D8D9E2 /* GameSingleton.swift */,
 				ADCAFB0C1BE3C6E400D8D9E2 /* ImageRotation.swift */,
@@ -147,6 +163,11 @@
 				ADCAFB061BE341C800D8D9E2 /* MosaicViewController.swift */,
 				ADCAFAFA1BE2E55800D8D9E2 /* BirthYearViewController.swift */,
 				ADCAFB401BE52E3200D8D9E2 /* Toucan.swift */,
+				AD0A29611BE6799900A160FE /* CacheViewController.swift */,
+				AD0A29631BE6FFE600A160FE /* GameModesViewController.swift */,
+				AD0A29651BE7C9A100A160FE /* Modes.swift */,
+				AD0A296C1BE86E1700A160FE /* Images.swift */,
+				AD0A29721BEB5CA800A160FE /* CorrectPictureCountViewController.swift */,
 			);
 			path = Neupass;
 			sourceTree = "<group>";
@@ -154,6 +175,8 @@
 		ADCAFA481BE2BA1700D8D9E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD0A29681BE7D69300A160FE /* Neupass-Bridging-Header.h */,
+				AD0A296A1BE7D84A00A160FE /* Hash.swift */,
 				ADCAFA491BE2BA1700D8D9E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -231,9 +254,11 @@
 				TargetAttributes = {
 					ADCAFA441BE2BA1700D8D9E2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = CU3M7QKD25;
 					};
 					ADCAFA591BE2BA1700D8D9E2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2YZZ997SZY;
 						TestTargetID = ADCAFA441BE2BA1700D8D9E2;
 					};
 				};
@@ -357,10 +382,17 @@
 				ADCAFB0D1BE3C6E400D8D9E2 /* ImageRotation.swift in Sources */,
 				ADCAFB411BE52E3200D8D9E2 /* Toucan.swift in Sources */,
 				ADCAFB431BE5327500D8D9E2 /* GameSingleton.swift in Sources */,
+				AD0A29641BE6FFE600A160FE /* GameModesViewController.swift in Sources */,
 				ADCAFA4B1BE2BA1700D8D9E2 /* AppDelegate.swift in Sources */,
+				AD0A296D1BE86E1700A160FE /* Images.swift in Sources */,
+				AD0A29731BEB5CA800A160FE /* CorrectPictureCountViewController.swift in Sources */,
+				ADFFC6ED1BE5CA9B0053C29E /* Readings.swift in Sources */,
+				AD0A29621BE6799900A160FE /* CacheViewController.swift in Sources */,
 				ADCAFA6B1BE2BCD100D8D9E2 /* StartViewController.swift in Sources */,
+				AD0A29661BE7C9A100A160FE /* Modes.swift in Sources */,
 				ADCAFB071BE341C800D8D9E2 /* MosaicViewController.swift in Sources */,
 				ADCAFAFB1BE2E55800D8D9E2 /* BirthYearViewController.swift in Sources */,
+				AD0A296B1BE7D84A00A160FE /* Hash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +451,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -442,6 +475,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1de3d3c4-9683-4817-a7a3-a91f978c65da";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,6 +499,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -480,6 +515,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1de3d3c4-9683-4817-a7a3-a91f978c65da";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -491,14 +527,20 @@
 			baseConfigurationReference = 14588887826021B5792E4135 /* Pods-Neupass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/manusuresh/Documents/Toucan/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Neupass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = suresh.manu.NeupassUIUC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1de3d3c4-9683-4817-a7a3-a91f978c65da";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/manusuresh/Documents/Neupass/Neupass/Neupass-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -507,14 +549,21 @@
 			baseConfigurationReference = 489D841326734E5484769637 /* Pods-Neupass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manudeep Suresh (S29Z53DUQ9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/manusuresh/Documents/Toucan/build/Debug-iphoneos",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Neupass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = suresh.manu.NeupassUIUC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1de3d3c4-9683-4817-a7a3-a91f978c65da";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/manusuresh/Documents/Neupass/Neupass/Neupass-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -522,6 +571,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,6 +585,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neupass.app/Neupass";
 			};
 			name = Debug;
@@ -542,6 +594,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -550,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "suresh.manu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neupass.app/Neupass";
 			};
 			name = Release;
@@ -564,7 +619,7 @@
 				ADCAFA631BE2BA1700D8D9E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		ADCAFA641BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "Neupass" */ = {
 			isa = XCConfigurationList;
@@ -573,7 +628,7 @@
 				ADCAFA661BE2BA1700D8D9E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		ADCAFA671BE2BA1700D8D9E2 /* Build configuration list for PBXNativeTarget "NeupassTests" */ = {
 			isa = XCConfigurationList;
@@ -582,7 +637,7 @@
 				ADCAFA691BE2BA1700D8D9E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

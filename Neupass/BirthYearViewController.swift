@@ -32,15 +32,15 @@ class BirthYearViewController: UIViewController {
     var backgroundImage: UIImageView!
     var digitCount = 0
     var assets: [UIImage] = []
+    var hashVal: [Int] = []
     
     // Timer 
-    var start: NSDate?
-    var keyPress1: NSDate?
-    var keyPress2: NSDate?
-    var keyPress3: NSDate?
-    var keyPress4: NSDate?
-    var keyTimings: [NSDate
-    ] = []
+    var start: Double?
+    var keyPress1: Double?
+    var keyPress2: Double?
+    var keyPress3: Double?
+    var keyPress4: Double?
+    var keyTimings: [Double] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +64,125 @@ class BirthYearViewController: UIViewController {
         self.navigationController?.navigationBarHidden = false
         self.view.bringSubviewToFront(yearLabel)
         
+        setup()
+
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        digitCount = 0
+        circle1.backgroundColor = UIColor.clearColor()
+        circle2.backgroundColor = UIColor.clearColor()
+        circle3.backgroundColor = UIColor.clearColor()
+        circle4.backgroundColor = UIColor.clearColor()
+        
+        let value = UIInterfaceOrientation.Portrait.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        
+        //Clear all the old values
+        GameSingleton.sharedInstance.clearOldVal()
+        
+        //Get appropriate pictures
+        assets = GameSingleton.sharedInstance.getPictures()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        start = NSDate().timeIntervalSince1970
+        keyTimings.removeAll(keepCapacity: false)
+        keyTimings.append(start!)
+    }
+    
+    
+    @IBAction func digitTapped(sender: AnyObject) {
+        let tapTime = (NSDate().timeIntervalSince1970)
+        ++digitCount
+        if digitCount == 1 {
+            circle1.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
+            keyPress1 = tapTime
+            keyPress1 = keyPress1! - start!
+            print(keyPress1!)
+            keyTimings.append(keyPress1!)
+        } else if digitCount == 2 {
+            circle2.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
+            keyPress2 = tapTime
+            keyPress2 = keyPress2! - start!
+            print(keyPress2!)
+            keyTimings.append(keyPress2!)
+        } else if digitCount == 3 {
+            circle3.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
+            keyPress3 = tapTime
+            keyPress3 = keyPress3! - start!
+            keyTimings.append(keyPress3!)
+        } else if digitCount == 4 {
+            circle4.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
+            keyPress4 = tapTime
+            keyPress4 = keyPress4! - start!
+            keyTimings.append(keyPress4!)
+            GameSingleton.sharedInstance.setTimeForYear(keyTimings)
+            performSegueWithIdentifier("showMosaic", sender: nil)
+        }
+    }
+    
+    
+    override func prepareForSegue(segue:(UIStoryboardSegue!), sender:AnyObject!) {
+        if segue.identifier == "showMosaic" {
+            let tmp = segue!.destinationViewController as! MosaicViewController
+            
+            print(UIScreen.mainScreen().bounds.height)
+            if (UIScreen.mainScreen().bounds.height == 667.0) {
+                tmp.IMAGE_SIZE_WIDTH = 221.0
+                tmp.IMAGE_SIZE_HEIGHT = 118.0
+            } else if (UIScreen.mainScreen().bounds.height == 736) {
+                tmp.IMAGE_SIZE_WIDTH = 242.0
+                tmp.IMAGE_SIZE_HEIGHT = 129.0
+            }
+            
+            tmp.assets = GameSingleton.sharedInstance.getPictures()
+            let chosenIndices = GameSingleton.sharedInstance.getIndices()
+            print("LARGE \(chosenIndices.count)")
+            for i in 0..<chosenIndices.count{
+                tmp.camoIndex.append(chosenIndices[i])
+            }
+            for i in 0..<assets.count {
+                tmp.userImages.append(i)
+            }
+            for i in 0..<assets.count {
+                tmp.subsetChosenImage.append(i)
+            }
+            tmp.userCountChoice = GameSingleton.sharedInstance.getUserCountChosen()
+            if (assets.count % tmp.userCountChoice == 0) {
+                tmp.iterations = assets.count / tmp.userCountChoice
+            } else {
+                tmp.iterations = assets.count / tmp.userCountChoice + 1
+
+            }
+            
+            tmp.camoIndex.shuffleInPlace()
+            
+            let userChoice = GameSingleton.sharedInstance.getGameMode()
+            let correctCount = GameSingleton.sharedInstance.getUserCountChosen()
+            if (userChoice == GameModes.RoommateVsUser || userChoice == GameModes.FriendVsUser || userChoice == GameModes.FriendVsRoommate || userChoice == GameModes.StrangerVsShared || userChoice == GameModes.StrangerVsUser) {
+                if (assets.count % correctCount) != 0 {
+                    for i in 0..<(correctCount - (assets.count % correctCount)) {
+                        tmp.subsetChosenImage.append(i)
+                    }
+                }
+            }
+
+            print(tmp.subsetChosenImage)
+        }
+    }
+    
+    
+    func setup() {
         button1.backgroundColor = UIColor.clearColor()
         button1.layer.cornerRadius = 0.5 * button1.bounds.size.width
         button1.layer.borderWidth = 1
@@ -173,75 +292,6 @@ class BirthYearViewController: UIViewController {
         circle4.layer.borderColor = UIColor(red: 0/255, green: 0/255, blue: 205/255, alpha: 1.0).CGColor
         self.view.bringSubviewToFront(circle4)
     }
-    
-    override func shouldAutorotate() -> Bool {
-        return false
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        digitCount = 0
-        circle1.backgroundColor = UIColor.clearColor()
-        circle2.backgroundColor = UIColor.clearColor()
-        circle3.backgroundColor = UIColor.clearColor()
-        circle4.backgroundColor = UIColor.clearColor()
-        
-        let value = UIInterfaceOrientation.Portrait.rawValue
-        UIDevice.currentDevice().setValue(value, forKey: "orientation")
-        
-        //Clear all the old values
-        GameSingleton.sharedInstance.clearOldVal()
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        start = NSDate()
-        keyTimings.removeAll(keepCapacity: false)
-        keyTimings.append(start!)
-    }
-    
-    
-    @IBAction func digitTapped(sender: AnyObject) {
-        let tapTime = NSDate()
-        ++digitCount
-        if digitCount == 1 {
-            circle1.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
-            keyPress1 = tapTime
-            keyTimings.append(keyPress1!)
-        } else if digitCount == 2 {
-            circle2.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
-            keyPress2 = tapTime
-            keyTimings.append(keyPress2!)
-        } else if digitCount == 3 {
-            circle3.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
-            keyPress3 = tapTime
-            keyTimings.append(keyPress3!)
-        } else if digitCount == 4 {
-            circle4.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1.0)
-            keyPress4 = tapTime
-            keyTimings.append(keyPress4!)
-            GameSingleton.sharedInstance.setTimeForYear(keyTimings)
-            performSegueWithIdentifier("showMosaic", sender: nil)
-        }
-    }
-    
-    
-    override func prepareForSegue(segue:(UIStoryboardSegue!), sender:AnyObject!) {
-        if segue.identifier == "showMosaic" {
-            let tmp = segue!.destinationViewController as! MosaicViewController
-            tmp.assets = assets
-            for i in 0..<16 {
-                tmp.camoIndex.append(i)
-            }
-            for i in 0..<assets.count {
-                tmp.userImages.append(i)
-            }
-        }
-    }
-    
     /*
     // MARK: - Navigation
 

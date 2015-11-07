@@ -9,5 +9,5 @@
 #ifndef Neupass_Bridging_Header_h
 #define Neupass_Bridging_Header_h
 
-
+#import <CommonCrypto/CommonDigest.h>
 #endif /* Neupass_Bridging_Header_h */

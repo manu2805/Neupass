@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+enum GameModes {
+    case User
+    case Roommate
+    case RoommateVsUser
+    case FriendVsUser
+    case FriendVsRoommate
+    case StrangerVsUser
+    case StrangerVsShared
+}
