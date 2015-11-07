@@ -11,8 +11,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "imageedit_1_4888879653.png",
       "scale" : "2x"
     },
     {
@@ -21,8 +22,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "ic_launcher_opt.png",
       "scale" : "2x"
     },
     {
